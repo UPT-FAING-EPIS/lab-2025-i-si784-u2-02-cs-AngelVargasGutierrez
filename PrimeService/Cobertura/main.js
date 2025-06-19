@@ -213,7 +213,7 @@ var assemblies = [
   {
     "name": "Primes.Lib",
     "classes": [
-      { "name": "Primes.Lib.PrimeService", "rp": "Primes.Lib_PrimeService.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 11, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "Primes.Lib.PrimeService", "rp": "Primes.Lib_PrimeService.html", "cl": 27, "ucl": 2, "cal": 29, "tl": 73, "cb": 22, "tb": 24, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
@@ -222,9 +222,17 @@ var metrics = [{ "name": "Crap Score", "abbreviation": "crp", "explanationUrl": 
 var historicCoverageExecutionTimes = [];
 
 var riskHotspotMetrics = [
+      { "name": "Crap Score", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" },
+      { "name": "Cyclomatic complexity", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" },
 ];
 
 var riskHotspots = [
+  {
+    "assembly": "Primes.Lib", "class": "Primes.Lib.PrimeService", "reportPath": "Primes.Lib_PrimeService.html", "methodName": "IsPrime(System.Int32)", "methodShortName": "IsPrime(...)", "fileIndex": 0, "line": 38,
+    "metrics": [
+      { "value": 24, "exceeded": false },
+      { "value": 24, "exceeded": true },
+    ]},
 ];
 
 var branchCoverageAvailable = true;
